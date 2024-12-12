@@ -1,0 +1,174 @@
+main {
+    section#project-detail {
+        &.container {
+            margin-top: 5rem;
+            background-color: #f8f9fa;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            h1 {
+                text-align: center;
+                margin-bottom: 1.5rem;
+                font-size: 3rem;
+                font-weight: bold;
+                color: #0056b3;
+            }
+
+            p {
+                text-align: justify;
+                margin-bottom: 1.5rem;
+                color: #6c757d;
+                font-size: 1.1rem;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+
+            .mb-5 {
+                margin-bottom: 3rem;
+
+                h2 {
+                    margin-bottom: 1rem;
+                    font-size: 2rem;
+                    color: #343a40;
+                }
+
+                p {
+                    text-align: justify;
+                    line-height: 1.8;
+                    color: #6c757d;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
+
+                    strong {
+                        font-weight: bold;
+                        color: #343a40;
+                    }
+                }
+
+                ul {
+                    li {
+                        margin-bottom: 0.75rem;
+                        color: #495057;
+                        text-align: justify;
+
+                        &:hover {
+                            transform: translateX(10px);
+                        }
+
+                        i.bi {
+                            color: #ff6f61;
+                            padding-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            .gallery-container {
+                margin: 0 auto;
+
+                .gallery-page {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+
+                    .row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        .col-md-4 {
+                            margin-bottom: 1.5rem;
+
+                            img.project-img {
+                                width: 100%;
+                                border-radius: 0.5rem;
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+                                &:hover {
+                                    transform: scale(1.05);
+                                    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                nav#pagination {
+                    margin-top: 20px;
+
+                    .pagination {
+                        display: flex;
+                        justify-content: center;
+                        list-style: none;
+                        padding: 0;
+
+                        .page-item {
+                            margin: 0 5px;
+
+                            &.active {
+                                .page-link {
+                                    background-color: #007bff;
+                                    border-color: #007bff;
+                                    color: #fff;
+                                }
+                            }
+
+                            .page-link {
+                                display: inline-block;
+                                padding: 0.5rem 0.75rem;
+                                color: #007bff;
+                                border: 1px solid #dee2e6;
+                                border-radius: 0.25rem;
+                                text-decoration: none;
+                                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+                                &:hover {
+                                    background-color: #0056b3;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .lienGit {
+                a {
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: #f8f9fa;
+                    background-color: #343a40;
+
+                    &:hover {
+                        color: #ffdd57;
+                        text-decoration: underline;
+                    }
+                }
+
+                .btn-outline-light {
+                    border-color: #343a40;
+                    color: #f8f9fa;
+                    transition: background-color 0.3s, color 0.3s;
+
+                    &:hover {
+                        background-color: #28a745;
+                        color: #f8f9fa;
+                        border-color: #28a745;
+                    }
+                }
+            }
+        }
+    }
+}

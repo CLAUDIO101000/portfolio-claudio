@@ -1,0 +1,99 @@
+main {
+    padding: 20px 0;
+
+    #contact {
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: $contact-primary-color;
+            margin-bottom: 1rem;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $contact-secondary-color;
+            margin-bottom: 1rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col-lg-6,
+        .col-md-8 {
+            padding: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        i {
+            font-size: 1.25rem;
+            color: $contact-primary-color;
+            margin-right: 0.75rem;
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+        span {
+            font-size: 1rem;
+            color: $contact-secondary-color;
+            display: flex;
+            align-items: center;
+
+            button {
+                margin-left: 10px;
+                font-size: 0.875rem;
+                padding: 5px 10px;
+                border: 1px solid $contact-btn-border-color;
+                background-color: transparent;
+                color: $contact-primary-color;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: $contact-primary-color;
+                    color: #fff;
+                }
+            }
+        }
+
+        a {
+            padding-left: 10px;
+            text-decoration: none;
+            color: $contact-primary-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        a[target="_blank"] {
+            color: $contact-primary-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

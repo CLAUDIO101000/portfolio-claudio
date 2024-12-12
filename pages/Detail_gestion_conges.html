@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de RANAIVOSON Nantenaina Claudio, Développeur Web Passionné. Découvrez mes projets récents et mon expertise.">
+    <link rel="icon" href="../favicon_v1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Portfolio - RANAIVOSON Nantenaina Claudio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/bootstrap-icons/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" role="navigation">
+            <a class="navbar-brand" href="../index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span>&#9776;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/about.html">À propos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../pages/projects.html">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/skill.html">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="project-detail" class="container mt-5">
+            <h1 class="text-center mb-4">Projet - Gestion des Congés</h1>
+            <p class="text-center mb-4">Détails du projet Gestion des Congés, ses fonctionnalités, et les outils
+                utilisés pour le développement.</p>
+            <div class="mb-5">
+                <h2>Description du projet</h2>
+                <p>
+                    Le projet <strong>Gestion des Congés</strong> est une application web qui permet de gérer
+                    efficacement les congés des employés d'une organisation.
+                    Il prend en charge l'ajout de congé, le calcul des jours restants, et la gestion des
+                    employés et des types de congés.
+                </p>
+            </div>
+            <div class="mb-5">
+                <h2>Fonctionnalités</h2>
+                <ul>
+                    <li><i class="bi bi-person-lock"></i> Authentification : les utilisateurs peuvent se connecter pour
+                        créer une session, et se déconnecter pour mettre fin à leur session.</li>
+                    <li><i class="bi bi-bar-chart"></i> Un tableau de bord contenant des cards et un histogramme du
+                        pourcentage de congés par mois.</li>
+                    <li><i class="bi bi-person-plus-fill"></i> Gestion des employés : ajout, modification, et
+                        suppression d'employés.</li>
+                    <li><i class="bi bi-calendar-check-fill"></i> Gestion des congés : Validation des
+                        demandes.</li>
+                    <li><i class="bi bi-calendar-day"></i> Calcul automatique des jours de congé restants.</li>
+                    <li><i class="bi bi-calendar-x-fill"></i> Gestion des jours fériés et week-ends exclus dans le
+                        calcul des congés.</li>
+                    <li><i class="bi bi-table"></i> Tableaux dynamiques avec recherche et pagination.</li>
+                    <li><i class="bi bi-bell-fill"></i> Notifications d'alerte pour informer qu'un employé n'a plus de
+                        solde de congés ou qu'il n'a pas encore une année de service.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Messages de succès pour l'enregistrement, la
+                        modification et la suppression.</li>
+                    <li><i class="bi bi-exclamation-circle-fill"></i> Confirmation avant la suppression des données
+                        sensibles.</li>
+                </ul>
+            </div>
+            <div class="mb-5">
+                <h2>Outils utilisés</h2>
+                <ul>
+                    <li><i class="bi bi-code-slash"></i> <strong>Langages :</strong> PHP, HTML, CSS, JavaScript.</li>
+                    <li><i class="bi bi-braces"></i> <strong>Frameworks :</strong> Bootstrap.</li>
+                    <li><i class="bi bi-database-fill"></i> <strong>Base de données :</strong> MySQL.</li>
+                    <li><i class="bi bi-file-earmark-code-fill"></i> <strong>Bibliothèques :</strong> jQuery,
+                        Bootstrap-icons, DataTables, SweetAlert2.</li>
+                    <li><i class="bi bi-bell-fill"></i> <strong>SweetAlert2 :</strong> utilisé pour les notifications et
+                        messages d'alerte afin de prévenir que le personnel n'a pas assez de solde de congés ou qu'il ne
+                        peut pas prendre de congés faute d'une année de service, ainsi que pour les messages de succès
+                        d'enregistrement, modification et suppression, et pour les confirmations de suppression.</li>
+                </ul>
+            </div>
+            <div class="gallery-container mb-5">
+                <h2>Galerie</h2>
+                <div class="gallery-page active">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <img src="../assets/images/Authentification-congés.JPG"
+                                class="img-fluid rounded project-img" alt="Capture d'écran 1">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="../assets/images/G-congés.JPG" class="img-fluid rounded project-img"
+                                alt="Capture d'écran 2">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="../assets/images/Page-congés.JPG" class="img-fluid rounded project-img"
+                                alt="Capture d'écran 3">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="../assets/images/Page-personnel.JPG" class="img-fluid rounded project-img"
+                                alt="Capture d'écran 4">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="../assets/images/Alert-congés.JPG" class="img-fluid rounded project-img"
+                                alt="Capture d'écran 5">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <img src="../assets/images/Succes-congés.JPG" class="img-fluid rounded project-img"
+                                alt="Capture d'écran 6">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-page">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <img src="../assets/images/Confirmation-delete-congés.JPG"
+                                class="img-fluid rounded project-img" alt="Capture d'écran 7">
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="lienGit mb-5">
+                <a href="https://github.com/CLAUDIO101000/Gestion-des-conges.git" class="btn btn-outline-light btn-sm"
+                    target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Gestion des Congés sur GitHub">
+                    <i class="bi bi-github"></i> Projet GitHub - Gestion des Congés
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Aperçu de l'image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Image agrandie" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <p class="mb-2">&copy; 2024 Portfolio - RANAIVOSON Nantenaina Claudio - Tous droits réservés</p>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <a href="mailto:ranaivosonclaudio@gmail.com" class="btn btn-outline-light btn-sm"
+                    aria-label="Envoyer un e-mail">
+                    <i class="bi bi-envelope"></i> ranaivosonclaudio@gmail.com
+                </a>
+                <a href="https://github.com/CLAUDIO101000" class="btn btn-outline-light btn-sm" target="_blank"
+                    rel="noopener noreferrer" aria-label="Voir mon profil GitHub">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/jquery/jquery-3.7.1.js" defer></script>
+    <script src="../assets/slick-1.8.1/slick/slick.min.js" defer></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../assets/js/script.js" defer></script>
+
+</body>
+
+</html>

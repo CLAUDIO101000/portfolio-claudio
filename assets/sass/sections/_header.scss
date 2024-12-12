@@ -1,0 +1,88 @@
+header {
+    background-color: $navbar-bg-color;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    .navbar {
+        &-brand {
+            font-size: 1.75rem;
+            color: $navbar-text-color;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding-left: 20px;
+
+            &:hover {
+                color: $navbar-link-hover-color;
+            }
+        }
+
+        .navbar-toggler {
+            border: none;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            span {
+                color: $navbar-link-hover-color;
+                padding-right: 10px;
+            }
+        }
+
+        &-collapse {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 1.5rem;
+
+            .nav-item {
+                .nav-link {
+                    color: $navbar-text-color;
+                    font-size: 1.1rem;
+                    padding: 0.75rem 1rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                    transition: color 0.3s ease, transform 0.2s ease;
+
+                    &:hover {
+                        color: $navbar-link-hover-color;
+                        text-decoration: underline;
+                        transform: scale(1.05);
+                    }
+
+                    &:focus {
+                        outline: none;
+                        color: $navbar-link-hover-color;
+                    }
+                }
+
+                &.active {
+                    .nav-link {
+                        color: $navbar-active-color;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .navbar-nav {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+
+            .nav-item {
+                .nav-link {
+                    padding: 0.75rem 0;
+                }
+            }
+        }
+    }
+}
