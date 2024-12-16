@@ -20,12 +20,12 @@ main {
       align-items: center;
       margin-bottom: 30px;
       font-size: 36px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
       color: #333;
 
       #text-display {
         display: inline-block;
-        white-space: nowrap;
-        overflow: hidden;
       }
 
       .cursor {
