@@ -49,7 +49,8 @@ main {
             color: $contact-primary-color;
             margin-right: 0.75rem;
             transition: transform 0.3s ease;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.2);
             }
         }
@@ -59,22 +60,6 @@ main {
             color: $contact-secondary-color;
             display: flex;
             align-items: center;
-
-            button {
-                margin-left: 10px;
-                font-size: 0.875rem;
-                padding: 5px 10px;
-                border: 1px solid $contact-btn-border-color;
-                background-color: transparent;
-                color: $contact-primary-color;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-
-                &:hover {
-                    background-color: $contact-primary-color;
-                    color: #fff;
-                }
-            }
         }
 
         a {
