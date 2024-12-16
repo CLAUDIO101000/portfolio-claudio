@@ -13,6 +13,7 @@ const texts = [
 const typingSpeed = 100;
 const delayBetweenTexts = 2000;
 const textDisplay = document.getElementById("text-display");
+const cursor = document.querySelector(".cursor");
 let currentTextIndex = 0;
 let currentCharIndex = 0;
 const textColors = [
@@ -25,6 +26,7 @@ function typeText() {
     if (currentCharIndex < texts[currentTextIndex].length) {
         textDisplay.textContent += texts[currentTextIndex][currentCharIndex];
         textDisplay.style.color = textColors[currentTextIndex];
+        cursor.style.color = textColors[currentTextIndex];
         currentCharIndex++;
         setTimeout(typeText, typingSpeed);
     } else {
@@ -42,6 +44,7 @@ function deleteText() {
     }
 }
 typeText();
+
   
 document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll(".project-img");
