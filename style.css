@@ -388,11 +388,11 @@ main #project .row .col-md-6 .card .card-body .d-flex .btn.btn-primary:hover {
   background-color: white;
   border-radius: 0.25rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 #competences .container:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 #competences h1 {
   font-size: 2.5rem;
@@ -429,15 +429,6 @@ main #project .row .col-md-6 .card .card-body .d-flex .btn.btn-primary:hover {
 #competences ul li:hover {
   transform: translateX(10px);
 }
-#competences ul li i {
-  font-size: 1.5rem;
-  color: #007bff;
-  margin-right: 1rem;
-  transition: color 0.3s ease;
-}
-#competences ul li i:hover {
-  color: #6c757d;
-}
 #competences ul li .flag-icon {
   width: 20px;
   height: 15px;
@@ -457,11 +448,54 @@ main #project .row .col-md-6 .card .card-body .d-flex .btn.btn-primary:hover {
 #competences ul li.text-dark {
   color: #333;
 }
+#competences .competence-box {
+  background-color: #f9f9f9;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+#competences .competence-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+#competences .competence-box i {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+#competences .competence-box i:hover {
+  transform: scale(1.2);
+  color: #6c757d;
+}
+#competences .competence-box h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+#competences .competence-box p {
+  font-size: 1rem;
+  color: #6c757d;
+}
 #competences .mb-4 {
   margin-bottom: 3rem;
 }
 #competences .my-5 {
   margin: 3rem 0;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #6c757d;
+  animation: fadeIn 1.5s ease-in-out;
+}
+#competences .my-5 p {
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+#competences .my-5 p:hover {
+  color: #007bff;
 }
 #competences .lead {
   font-size: 1.25rem;
@@ -476,17 +510,27 @@ main #project .row .col-md-6 .card .card-body .d-flex .btn.btn-primary:hover {
 #competences .text-muted {
   color: #6c757d;
 }
-#competences .my-5 {
-  text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: #6c757d;
-  animation: fadeIn 1.5s ease-in-out;
-}
-#competences .my-5 p {
-  font-style: italic;
-}
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 main {
   padding: 20px 0;
 }
