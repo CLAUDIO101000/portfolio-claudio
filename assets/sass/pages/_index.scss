@@ -10,14 +10,36 @@
 
 main {
   animation: fadeIn 2.5s ease-in-out;
+
   section {
     text-align: center;
     margin: 50px auto;
 
     h1.section-title {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 30px;
       font-size: 36px;
       color: #333;
-      margin-bottom: 20px;
+
+      #text-display {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .cursor {
+        display: inline-block;
+        font-weight: bold;
+        animation: blink 0.7s steps(1) infinite;
+        color: #333;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
     }
 
     h2.section-subtitle {
@@ -52,7 +74,8 @@ main {
       gap: 20px;
       transition: transform ease 0.3s;
       padding-bottom: 20px;
-      &:hover{
+
+      &:hover {
         transform: scale(1.02);
       }
 
