@@ -45,7 +45,6 @@ function deleteText() {
 }
 typeText();
 
-  
 document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll(".project-img");
     images.forEach(image => {
