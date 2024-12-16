@@ -143,9 +143,27 @@ main section {
   margin: 50px auto;
 }
 main section h1.section-title {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
   font-size: 36px;
   color: #333;
-  margin-bottom: 20px;
+}
+main section h1.section-title #text-display {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main section h1.section-title .cursor {
+  display: inline-block;
+  font-weight: bold;
+  animation: blink 0.7s steps(1) infinite;
+  color: #333;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 main section h2.section-subtitle {
   font-size: 28px;
