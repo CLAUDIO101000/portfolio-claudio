@@ -1,126 +1,178 @@
 #competences {
-    .container {
-      padding: 2rem 1rem;
-      background-color: white;
-      border-radius: $border-radius;
-      box-shadow: $box-shadow;
-      transition: transform 0.3s ease-in-out;
-  
-      &:hover {
-        transform: scale(1.02);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      }
-    }
-  
-    h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: $primary-skill-color;
-      margin-bottom: 3rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      animation: fadeIn 2.5s ease-in-out;
-    }
-  
-    h2 {
-      font-size: 1.75rem;
-      color: $muted-skill-color;
-      margin-bottom: 1rem;
-      transition: color 0.3s ease;
-      animation: fadeIn 1.5s ease-in-out;
-  
-      &:hover {
-        color: $primary-skill-color;
-      }
-    }
-  
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-  
-      li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1.5rem;
-        font-size: 1.125rem;
-        animation: fadeIn 1.5s ease-in-out;
-        transition: transform 0.3s ease;
-        flex-wrap: wrap;
-  
-        &:hover {
-          transform: translateX(10px);
-        }
-  
-        i {
-          font-size: 1.5rem;
-          color: $primary-skill-color;
-          margin-right: 1rem;
-          transition: color 0.3s ease;
-  
-          &:hover {
-            color: $secondary-skill-color;
-          }
-        }
-  
-        .flag-icon {
-          width: 20px;
-          height: 15px;
-          margin-right: 1rem;
-          border-radius: 3px;
-          transition: transform 0.3s ease;
-          
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-  
-        strong {
-          font-weight: bold;
-          color: $text-skill-color;
-          padding-right: 10px;
-          white-space: nowrap;
-        }
-  
-        &.text-dark {
-          color: $text-skill-color;
-        }
-      }
-    }
-  
-    .mb-4 {
-      margin-bottom: 3rem;
-    }
-  
-    .my-5 {
-      margin: 3rem 0;
-    }
-  
-    .lead {
-      font-size: 1.25rem;
-      line-height: 1.6;
-      color: $secondary-skill-color;
-      font-style: italic;
-      transition: color 0.3s ease;
-  
-      &:hover {
-        color: $primary-skill-color;
-      }
-    }
-  
-    .text-muted {
-      color: $muted-skill-color;
-    }
-  
-    .my-5 {
-      text-align: center;
-      font-size: 1.125rem;
-      line-height: 1.7;
-      color: $secondary-skill-color;
-  
-      p {
-        font-style: italic;
-      }
-      animation: fadeIn 1.5s ease-in-out;
+  .container {
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     }
   }
-  
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $primary-skill-color;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    color: $muted-skill-color;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+    animation: fadeIn 1.5s ease-in-out;
+
+    &:hover {
+      color: $primary-skill-color;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.125rem;
+      animation: fadeIn 1.5s ease-in-out;
+      transition: transform 0.3s ease;
+      flex-wrap: wrap;
+
+      &:hover {
+        transform: translateX(10px);
+      }
+
+      .flag-icon {
+        width: 20px;
+        height: 15px;
+        margin-right: 1rem;
+        border-radius: 3px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      strong {
+        font-weight: bold;
+        color: $text-skill-color;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+
+      &.text-dark {
+        color: $text-skill-color;
+      }
+    }
+  }
+
+  .competence-box {
+    background-color: $box-bg-color;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 1.5s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    i {
+      font-size: 3rem;
+      color: $primary-skill-color;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        color: $secondary-skill-color;
+      }
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: $text-skill-color;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $muted-skill-color;
+    }
+  }
+
+  .mb-4 {
+    margin-bottom: 3rem;
+  }
+
+  .my-5 {
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: $secondary-skill-color;
+
+    p {
+      font-style: italic;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary-skill-color;
+      }
+    }
+
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: $secondary-skill-color;
+    font-style: italic;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-skill-color;
+    }
+  }
+
+  .text-muted {
+    color: $muted-skill-color;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
