@@ -147,12 +147,12 @@ main section h1.section-title {
   align-items: center;
   margin-bottom: 30px;
   font-size: 36px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
   color: #333;
 }
 main section h1.section-title #text-display {
   display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
 }
 main section h1.section-title .cursor {
   display: inline-block;
